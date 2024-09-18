@@ -10,7 +10,7 @@ const TodoForm = ({ addTodo }) => {
     addTodo(value, category);
     setValue("");
     setCategory("");
-  };
+  };npm StaticRange
 
   return (
 
