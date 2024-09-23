@@ -10,7 +10,7 @@ const TodoForm = ({ addTodo }) => {
     addTodo(value, category);
     setValue("");
     setCategory("");
-  };npm StaticRange
+  }; 
 
   return (
 
@@ -20,6 +20,7 @@ const TodoForm = ({ addTodo }) => {
         <input
           type="text"
           placeholder="Digite o Título"
+          value={value}
           onChange={(e) => setValue(e.target.value)}
         />
         <select value={category} onChange={(e) => setCategory(e.target.value)}>

@@ -71,6 +71,7 @@ function App() {
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort}/>
       <div className="todo-list">
+        {todos.length === 0 && <h3>don´t have tasks</h3>}
         {todos
           .filter((todo) =>
             filter === "All"
@@ -96,6 +97,7 @@ function App() {
               completeTodo={completeTodo} />
           ))}
       </div>
+  
       <TodoForm addTodo={addTodo} />
     </div>
   );
